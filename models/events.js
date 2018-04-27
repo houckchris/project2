@@ -16,16 +16,45 @@ module.exports = function (sequelize, DataTypes) {
 
     },
     eventDate: {
-      type: DataTypes.DATE,
+      type: DataTypes.TEXT,
       allowNull: false,
+    
 
     },
 
     eventTime: {
-      type: DataTypes.TIME,
+      type: DataTypes.TEXT,
       allowNull: false,
 
     },
+
+    eventAddr : {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
+
+    },
+
+    eventCity: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
+
+    },
+
+    eventState: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [2]
+      }
+
+    },
+
     eventZip : {
       type: DataTypes.INTEGER,
       allowNull: false,
