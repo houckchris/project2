@@ -8,9 +8,10 @@ module.exports = function (app) {
   // GET route for getting all of the volunteers
   app.get("/api/vols", function (req, res) {
     db.Vol.findAll({}).then(function(dbVol) {
-        res.json(dbVol);
-      });
+      // We have access to the todos as an argument inside of the callback function
+      res.json(dbVol);
     });
+  });
 
   // GET route for getting volunteer by id
   app.get("/api/vols/:id", function(req, res) {
