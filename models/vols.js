@@ -1,24 +1,24 @@
 module.exports = function(sequelize, DataTypes) {
-    var Vols = sequelize.define("Vols", {
-      name: {
+    var Vol = sequelize.define("Vols", {
+      volName: {
         type: DataTypes.STRING,
         allowNull: false, 
         validate: {
           len: [1]
         }
       },
-      zip: {
-        type: DataTypes.INT,
+      volZip: {
+        type: DataTypes.INTEGER,
         allowNull: false,
         validate: {
           len: [1]
         }
       },
-      email: {
+      volEmail: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-          len: [1]
+          isEmail: true
         }
       },
       aboutMe: {
@@ -28,5 +28,5 @@ module.exports = function(sequelize, DataTypes) {
           }
       }
     });
-    return vols;
+    return Vol;
   };
