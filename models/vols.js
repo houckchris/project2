@@ -27,7 +27,20 @@ module.exports = function(sequelize, DataTypes) {
           validate: {
             len: [1]
           }
+      },
+      volImage: {
+        type: DataTypes.STRING,
+        validate: {
+          len: [1]
+        }
+    },   
+    
+    volskills: {
+      type: DataTypes.STRING,
+      validate: {
+        len: [1]
       }
+  }
     });
     return Vol;
   };
