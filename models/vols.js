@@ -35,7 +35,7 @@ module.exports = function(sequelize, DataTypes) {
         }
     },   
     
-    volskills: {
+    volSkills: {
       type: DataTypes.STRING,
       validate: {
         len: [1]
