@@ -31,6 +31,8 @@ $(document).ready(function() {
 
     // FUNCTION TO CREATE A POST'S HTML
     function createNewRow(event){
+        var event;
+        
 
     }
 
@@ -41,5 +43,5 @@ $(document).ready(function() {
         // PSEUDOCODE PHASE TWO
 
     // FUNCTION TO DISPLAY EMPTY EVENTS WHEN THERE ARE NONE TO SHOW
-    *
+    
 });
