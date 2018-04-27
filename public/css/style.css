@@ -1,0 +1,349 @@
+#mainPic {
+  background-image: url(../images/mobiledevices/LoadPage2.jpg);
+  max-width: 100%;
+  /* max-height: 100%; */
+  height: 992px;
+  margin-top: -22px;
+  padding-bottom: 1px;
+  background-size: cover;
+}
+
+body{
+
+
+
+}
+
+.space{
+  margin-bottom: 185px;
+}
+
+/* Nav Bar Color select */
+#myNav {
+  margin-left: 115px;
+    margin-right: 101px;
+    background-color: white !important;
+}
+/* Nav text color change */
+.navSelect {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  margin-top: 38px;
+}
+
+#navLogo{
+  width: 277px;
+  margin-top: 1px;
+}
+
+.arial{
+  font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+}
+#boldArial{
+  font-weight: 800;
+    font-size: 82px;
+    margin-bottom: -46px;
+    margin-top: 21px;
+}
+
+.rotated {
+  transform: rotate(-10deg);
+  
+}
+
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 175px;
+  top: 0;
+  left: 256px;
+  right: 0;
+  bottom: 0;
+  /* background-color: black; */
+  background-color: rgba(0,0,0,0.5);
+  opacity: 0.5;
+  z-index: 0;
+  margin-top: 299px;
+  
+}
+
+#ovText{
+  color:white;
+  text-align: center;
+}
+
+#mainPhone {
+  width: 497px;
+  margin-top: -56px;
+  margin-left: 138px;
+  padding-bottom: 3px;
+  margin-bottom: -350px;
+}
+
+.blackLine{
+  background-color:black;
+  height: 98px;
+  width: 900px;
+}
+
+#myProfile {
+  float: left;
+}
+
+nav .brand-logo {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+}
+.navbar-fixed {
+  background-color: white;
+}
+.aboutColor {
+  background-color: blue;
+}
+
+/* Adjust height of Navbar */
+#navWhole {
+  background-color: white;
+  height: 148px;
+}
+#about-me{
+  height: 1104px;
+  margin-top: -56px;
+}
+
+#dorian{
+  color: #2671c7;
+}
+
+mark.red {
+  color:#ff0000;
+  background: none;
+}
+
+#portContainer {
+  background: url(../images/bg-pattern.png),
+    linear-gradient(to left, #1c1ccd, #19c7d4);
+  /* background-image: url(../images/bg-pattern.png),
+    linear-gradient(to left, rgb(28, 28, 205), rgb(25, 199, 212)) ; */
+  height: 800px;
+}
+
+#portfolioSec {
+  height: 3px;
+  margin-top: -327px;
+}
+.portfolio {
+  
+  margin-top: -171px;
+  margin-left: 70px;
+}
+
+#device {
+  /* background-image: url(..assets/images/mobiledevices/iphone_6_port_gold.png);   */
+}
+
+#iphoneWhite {
+  width: 50%;
+  height: 50%;
+  margin-top: 82px;
+  margin-left: 122px;
+}
+
+.ux {
+  text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.parallax-container .parallax img {
+  z-index: -1;
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-image: url(../images/bg-pattern.png),
+    linear-gradient(to left, rgb(28, 28, 205), rgb(25, 199, 212)); */
+}
+
+.atlPic {
+  height: 412px;
+}
+
+#slogan,
+#slogan2 {
+  position: relative;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin: 416px 0px 0px 800px;
+}
+
+#slogan2 {
+  font-family: "Montserrat", sans-serif;
+  margin: -68px 0px 0px 980px;
+}
+
+.githubIcon,
+.linkedInIcon,
+.instagramIcon,
+.twitterIcon {
+  width: 30px;
+  max-width: 40px;
+  background-image: url("../images/github.png");
+  height: 30px;
+  float: right;
+  margin: 20px 0px 0px 0px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 28px 28px;
+}
+
+.linkedInIcon {
+  background-image: url("../images/linkedin.png");
+}
+
+.instagramIcon {
+  background-image: url("../images/instagram.png");
+}
+
+.twitterIcon {
+  background-image: url("../images/twitter.png");
+}
+a:hover {
+  color: #2671c7;
+}
+
+/* #events,a:hover {
+  color: red;
+} */
+
+
+#wSharp{
+  margin-top: 89px;
+}
+
+#wSharp2{
+  margin-left: -342px;
+  margin-top: -28px;
+}
+
+#wSharp3{
+  margin-top: -257px;
+  margin-bottom: 40px;
+
+}
+
+.header{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #2671c7;
+  margin-top: -8px;
+
+}
+
+.portfolio,
+.contact {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color:#2671c7;
+}
+
+.nav-mobile,
+.grey-text {
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.btn-large {
+  height: 100px;
+}
+
+/* 
+      ##Device = Desktops
+      ##Screen = 1281px to higher resolution desktops
+    */
+
+
+    @media (min-width: 1281px) {
+      
+  
+  
+  
+  
+  
+}
+
+
+    /* 
+      ##Device = Laptops, Desktops
+      ##Screen = B/w 1025px to 1280px
+    */
+
+
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      
+    
+      
+    }
+
+
+    /* 
+      ##Device = Tablets, Ipads (portrait)
+      ##Screen = B/w 768px to 1024px
+    */
+
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      
+      
+      
+    }
+
+
+    /* 
+      ##Device = Tablets, Ipads (landscape)
+      ##Screen = B/w 768px to 1024px
+    */
+
+
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+      
+     
+      
+    }
+
+
+    /* 
+      ##Device = Low Resolution Tablets, Mobiles (Landscape)
+      ##Screen = B/w 481px to 767px
+    */
+
+
+    @media (min-width: 481px) and (max-width: 767px) {
+      
+    
+      
+    }
+
+
+    /* 
+      ##Device = Most of the Smartphones Mobiles (Portrait)
+      ##Screen = B/w 320px to 479px
+    */
+
+
+    @media (min-width: 320px) and (max-width: 480px) {
+      
+      
+      
+    }
+
