@@ -1,5 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
-    var Vol = sequelize.define("Vols", {
+
+    var Vol = sequelize.define("Vol", {
       volName: {
         type: DataTypes.STRING,
         allowNull: false, 
@@ -26,7 +27,20 @@ module.exports = function(sequelize, DataTypes) {
           validate: {
             len: [1]
           }
+      },
+      volImage: {
+        type: DataTypes.STRING,
+        validate: {
+          len: [1]
+        }
+    },   
+    
+    volskills: {
+      type: DataTypes.STRING,
+      validate: {
+        len: [1]
       }
+  }
     });
     return Vol;
   };
