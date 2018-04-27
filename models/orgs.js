@@ -11,7 +11,9 @@ module.exports = function(sequelize, DataTypes) {
         orgImage: {
           type: DataTypes.STRING,
           allowNull: false,
-          len: [1]
+          validate: {
+            len: [1]
+          }
         }
       });
 
