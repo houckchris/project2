@@ -43,14 +43,54 @@ body {
 text-align: left;
 }
 
+/* Volunteer Styles */
+
+#volImage{
+
+
+}
+
+.imgAttr{
+  text-align:center;
+}
+
+.imageContain{
+
+  width:100%
+}
+
+.sizeImage{
+  width: 48%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 4px solid white;
+}
+
+/* Volunteer Styles */
+
+
 /* Event Styles */
 
 .eventEnter {
   background-color: black;
-  height: 30%;
+  height: 27%;
 }
 .event1 {
   margin-top: 90px;
+}
+
+.event2{
+
+}
+
+.eventSingle{
+
+
+}
+
+.lastEventDiv{
+
+  padding-bottom:30px;
 }
 
 .eventLogo {
@@ -92,7 +132,8 @@ h3.eventDate{
   justify-content: center;
 }
 .margin-top {
-  margin-top: 99px;
+  margin-top: 159px;
+  margin-bottom: 131px;
 }
 
 .space {
