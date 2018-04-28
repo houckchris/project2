@@ -15,7 +15,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
         crossorigin="anonymous"></script>
 
-    <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/main.js"></script> -->
 </head>
 
 <body>
@@ -43,39 +43,58 @@
     <div class="row margin-top">
         <div class="center-align flexItem flexCenter col s5">
             <div class="blueBox1 ">
-                <div class="col s12">This div is 5-columns wide on all screen sizes</div>
-                <div class="col s12">This div is 5-columns wide on all screen sizes</div>
-                <div class="col s12">This div is 5-columns wide on all screen sizes</div>
-                <div class="col s12">This div is 5-columns wide on all screen sizes</div>
+                <div class="col s12" id="volImage">
 
+                    <img class="sizeImage responsive-img circle" src="./images/steph2.jpg">
+
+                </div>
+                <div class="col s12" id="volName">Karen Smith</div>
+                <div class="col s12" id="aboutMe">
+                    <p>I'm eager and ready to volunteer and get my hands dirty!</p>
+                </div>
+                <div class="col s12" id="editButton">
+                    <a class="waves-effect waves-light btn-small">Edit Profile</a>
+                </div>
+                <div class="col s12" id="volZip">30156</div>
+                <div class="col s12" id="volEmail">karengjones@gmail.com</div>
+                <div class="col s12" id="volSkills">Foodservice, Construction</div>
             </div>
         </div>
 
         <div class="center-align flexItem flexCenter col s7">
             <div class="eventContainer blueBox2">
-                <div class="col s12"><h2 class="eventHeading">Upcoming Events</h2></div>
-                <div class="col s12 eventEnter event1">
-                    <div class="row">
-                        <div class="col s4">
-                            <img class="eventLogo" src="./images/salvationA.png">
-                        </div>
-                        <div class="col s8">
-                            <h3 class="eventDate">May 22nd</h3>
-                            <p class="eventText">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                <div class="eventSingle">
+                    <div class="col s12">
+                        <h2 class="eventHeading">Upcoming Events</h2>
+                    </div>
+                    <div class="col s12 eventEnter event1">
+                        <div class="row">
+                            <div class="col s3">
+                                <img class="eventLogo" src="./images/salvationA.png">
+                            </div>
+                            <div class="col s9">
+                                <h3 class="eventDate">May 22nd</h3>
+                                <p class="eventText">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
                                 <a class="waves-effect waves-light btn-small">Book Event</a>
+                            </div>
                         </div>
                     </div>
+
                 </div>
-                <div class="col s12">This div is 5-columns wide on all screen sizes</div>
-                <div class="col s12">This div is 5-columns wide on all screen sizes</div>
+
+
+
+
             </div>
         </div>
     </div>
 
+    <script src="js/vol.js" type="text/javascript"></script>
+    <script src="js/event.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    
+
 </body>
 
 </html>
