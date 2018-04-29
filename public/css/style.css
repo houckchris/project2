@@ -93,6 +93,10 @@ text-align: left;
 
 /* Event Styles */
 
+#categorySec{
+  padding-left: 50px;
+}
+
 .eventEnter {
   background-color: black;
   height: 27%;
