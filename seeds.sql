@@ -1,13 +1,13 @@
 
 -- example data to populate for the .models/orgs.js
 INSERT INTO Orgs (orgName, orgImage) 
-VALUES ('Goodwill', "img/pic.png"), ('OpenHand', "img/png1.png"), ('FoodBank', "img/png2.png");
+VALUES ('Goodwill', "../images/habitat.png"), ('OpenHand', "../imagessalvationA.png"), ('FoodBank', "../images/goodwill.png");
 
 
 -- example data to populate for the .models/events.js
 INSERT INTO events (eventTitle, eventDesc, eventDate, eventTime, eventAddr, eventCity, eventState, eventZip, eventDuration, eventSlots, eventCat, orgId) 
-VALUES ('Meal Delivery', 'Deliver Meals to sick and elderly', "05/01/2018", "10:00 am", "123 A Street", "Atlanta", "GA", 30319, 2, 10, "Meal Delivery", 1), ('Meal Delivery', 'Deliver Meals to sick and elderly', "05/02/2018", "10:00 am", "123 A Street", "Atlanta", "GA", 30319, 2, 10, "Meal Delivery", 1), 
-('Meal Delivery', 'Deliver Meals to sick and elderly', "05/03/2018", "10:00 am", "123 A Street", "Atlanta", "GA", 30319, 2, 10, "Meal Delivery", 1);
+VALUES ('Meal Delivery', 'Deliver Meals to sick and elderly', "05/01/2018", "10:00 am", "123 A Street", "Atlanta", "GA", 30319, 2, 10, "Meal Delivery", 1), ('Meal Delivery', 'Deliver Meals to sick and elderly', "05/02/2018", "10:00 am", "123 A Street", "Atlanta", "GA", 30319, 2, 10, "Meal Delivery", 2), 
+('Meal Delivery', 'Deliver Meals to sick and elderly', "05/03/2018", "10:00 am", "123 A Street", "Atlanta", "GA", 30319, 2, 10, "Meal Delivery", 3);
 
 
 -- example data to populate for the .models/vols.js
