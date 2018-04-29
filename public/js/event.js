@@ -55,14 +55,14 @@ $(document).ready(function() {
         // CREATE LOGO IMG FOR WITHIN LOGO DIV
         var newEventLogo = $("<img>");
         newEventLogo.addClass("eventLogo");
-        newEventLogo.attr("src", event.image);
+        newEventLogo.attr("src", event.Org.orgImage);
         // PUT LOGO IMG INTO LOGO DIV
         newEventLogoDiv.append(newEventLogo);
         // PUT LOGO DIV INTO ROW
         newEventRow.append(newEventLogoDiv);
         // CREATE EVENT INFO DIV
         var eventInfoDiv = $("<div>");
-        eventInfo.addClass("col s8");
+        eventInfoDiv.addClass("col s8");
         // CREATE EVENTDATE H3
         var eventDate = $("<h3>");
         eventDate.addClass("eventDate");
