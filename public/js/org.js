@@ -18,9 +18,12 @@ $(document).ready(function () {
     var taskForm = $("#taskForm");
     var orgSelect = $("#orgName");
 
+ // Getting the orgs, and their tasks
+
+ getOrgs();
  
     // Adding an event listener for when the form is submtted
-//  $(taskForm).on('submit', handleFormSubmit);
+
 $(taskForm).on('submit',function(e){
     e.preventDefault();  
     handleFormSubmit();
@@ -72,11 +75,7 @@ console.log("updating: " + updating)
    else if (url.indexOf("?org_id=") !== -1) {
     orgId = url.split("=")[1];
   }
- // Getting the orgs, and their tasks
-  
 
-
- getOrgs();
   // A function for handling what happens when the form to create a new post is submitted
   function handleFormSubmit(event) {
     event.preventDefault();
