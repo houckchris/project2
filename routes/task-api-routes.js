@@ -12,117 +12,117 @@ var db = require("../models");
 // =============================================================
 module.exports = function (app) {
 
-  // GET route for getting all of the events
-  app.get("/api/events", function (req, res) {
+  // GET route for getting all of the tasks
+  app.get("/api/tasks", function (req, res) {
     var query = {};
     if (req.query.orgId) {
       query.orgId = req.query.orgId;
     }
     
-    db.Event.findAll({
+    db.Task.findAll({
       where: query,
       include: [db.Org]
-    }).then(function(dbEvent) {
-      res.json(dbEvent);
+    }).then(function(dbTask) {
+      res.json(dbTask);
     });
   });
 
-  // GET route for getting all of the events of a certain category
-  app.get("/api/events/:eventCat", function (req, res) {
+  // GET route for getting all of the tasks of a certain category
+  app.get("/api/tasks/:taskCat", function (req, res) {
 
     // Here we add an "include" property to our options in our findAll query
     // We set the value to an array of the models we want to include in a left outer join
-    // In this case, just db.Event
-    db.Event.findAll({
+    // In this case, just db.Task
+    db.Task.findAll({
       where: {
-        eventCat: req.params.eventCat
+        taskCat: req.params.taskCat
       },
       include: [db.Org]
-    }).then(function (dbEvent) {
-      res.json(dbEvent);
+    }).then(function (dbTask) {
+      res.json(dbTask);
     });
   });
 
-  // POST route for saving a new event
-  app.post("/api/events", function (req, res) {
-    db.Event.create(req.body).then(function (dbEvent) {
-      res.json(dbEvent);
+  // POST route for saving a new task
+  app.post("/api/tasks", function (req, res) {
+    db.Task.create(req.body).then(function (dbTask) {
+      res.json(dbTask);
     });
   });
 
-  // GET route for getting all of the events of a certain zipcode
-  // app.get("/api/events/:eventZip", function(req, res) {
+  // GET route for getting all of the tasks of a certain zipcode
+  // app.get("/api/tasks/:taskZip", function(req, res) {
 
   // Here we add an "include" property to our options in our findAll query
   // We set the value to an array of the models we want to include in a left outer join
-  // In this case, just db.Event
-  //   db.Event.findAll({
+  // In this case, just db.Task
+  //   db.Task.findAll({
   //     where: {
-  //       eventZip: req.params.eventZip
+  //       taskZip: req.params.taskZip
   //     },
   //     include: [db.Org]
-  //   }).then(function(dbEvent) {
-  //     res.json(dbEvent);
+  //   }).then(function(dbTask) {
+  //     res.json(dbTask);
   //   });
   // });
 
-  // GET route for getting all of the events of a certain date
-  //  app.get("/api/events/:eventDate", function(req, res) {
+  // GET route for getting all of the tasks of a certain date
+  //  app.get("/api/tasks/:taskDate", function(req, res) {
 
   // Here we add an "include" property to our options in our findAll query
   // We set the value to an array of the models we want to include in a left outer join
-  // In this case, just db.Event
-  //   db.Event.findAll({
+  // In this case, just db.Task
+  //   db.Task.findAll({
   //     where: {
-  //       eventDate: req.params.eventDate
+  //       taskDate: req.params.taskDate
   //     },
   //     include: [db.Org]
-  //   }).then(function(dbEvent) {
-  //     res.json(dbEvent);
+  //   }).then(function(dbTask) {
+  //     res.json(dbTask);
   //   });
   // });
 
 
 
 
-  // Get route for retrieving a single event
-  // app.get("/api/events/:id", function(req, res) {
+  // Get route for retrieving a single task
+  // app.get("/api/tasks/:id", function(req, res) {
   // Here we add an "include" property to our options in our findOne query
   // We set the value to an array of the models we want to include in a left outer join
   // In this case, just db.Org
-  //   db.Event.findOne({
+  //   db.Task.findOne({
   //     where: {
   //       id: req.params.id
   //     },
   //     include: [db.Org]
-  //   }).then(function(dbEvent) {
-  //     res.json(dbEvent);
+  //   }).then(function(dbTask) {
+  //     res.json(dbTask);
   //   });
   // });
 
 
 
-  // DELETE route for deleting events
-  // app.delete("/api/events/:id", function(req, res) {
-  //   db.Event.destroy({
+  // DELETE route for deleting tasks
+  // app.delete("/api/tasks/:id", function(req, res) {
+  //   db.Task.destroy({
   //     where: {
   //       id: req.params.id
   //     }
-  //   }).then(function(dbEvent) {
-  //     res.json(dbEvent);
+  //   }).then(function(dbTask) {
+  //     res.json(dbTask);
   //   });
   // });
 
-  // PUT route for updating events
-  // app.put("/api/events", function(req, res) {
-  //   db.Event.update(
+  // PUT route for updating tasks
+  // app.put("/api/tasks", function(req, res) {
+  //   db.Task.update(
   //     req.body,
   //     {
   //       where: {
   //         id: req.body.id
   //       }
-  //     }).then(function(dbEvent) {
-  //     res.json(dbEvent);
+  //     }).then(function(dbTask) {
+  //     res.json(dbTask);
   //   });
   // });
 };

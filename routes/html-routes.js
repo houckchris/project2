@@ -22,9 +22,9 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 
-  // events route loads events.html
-  app.get("/events", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/events.html"));
+  // tasks route loads tasks.html
+  app.get("/tasks", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/tasks.html"));
   });
 
   // orgs route loads orgs.html
